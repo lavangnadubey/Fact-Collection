@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facts Collection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        #factnumber {
+            display: none;
+        }
+
+        #factyear {
+            display: none;
+        }
+        #factdate{
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+    <div class='container'>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card bg-primary text-white mt-5 p-4">
+                    <h1>Number Facts</h1>
+                    <p>Enter a number and get a random fact</p>
+                    <input type="number" class="form-control form-control-lg" id='numberInput'
+                        placeholder="Enter any number">
+                        
+                    <div id="factnumber" class="card-body">
+                        <h4 class="card-title">
+                            Number Fact
+
+                        </h4>
+                        <p id='factTextNum' class='card-text'>
+                            <ul>
+                                <li id='trivian'></li>
+                                <li id='math'></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-primary text-white mt-5 p-4">
+                    <h1>Year Facts</h1>
+                    <p>Enter a year and get a random fact</p>
+                    <input type="number" class="form-control form-control-lg" id='yearInput'
+                        placeholder="Enter any year">
+                    <div id="factyear" class="card-body">
+                        <h4 class="card-title">
+                            Year Fact
+
+                        </h4>
+                        <p id='factTextYear' class='card-text'></p>
+                    </div>
+                </div>
+
+
+                <div class="card bg-primary text-white mt-5 p-4">
+                    <h1>Date Facts</h1>
+                    <p>Enter a date and get a random fact</p>
+                    <p>Format mm/dd . Enter 12/7 for December 7.</p>
+                    <input type="text" class="form-control form-control-lg" id='dateInput'
+                        placeholder="Enter any date">
+                    <div id="factdate" class="card-body">
+                        <h4 class="card-title">
+                            Date Fact
+
+                        </h4>
+                        <p id='factTextDate' class='card-text'></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='main.js'>       </script>
+</body>
+
+</html>
